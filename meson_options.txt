@@ -1,0 +1,12 @@
+option('opengl_version',
+	type: 'combo', choices: ['GL_30', 'GL_31', 'GL_32',
+		'GL_33', 'GL_40', 'GL_41', 'GL_42', 'GL_43', 'GL_44',
+		'GL_45', 'GL_46'],
+	yield: true,
+	description: 'Import OpenGL functions up to the specified version.')
+
+option('opengl_extensions',
+	type: 'array',
+	yield: true,
+	description: 'Load specified OpenGL extensions specified as extension strings.')
+
